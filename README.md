@@ -7,9 +7,9 @@ Public website for Soccer Fitness Tracker iOS app containing:
 
 ## URLs (after enabling GitHub Pages)
 
-- **Home**: https://umangd03.github.io/soccer-fitness-tracker-site/
-- **Privacy Policy**: https://umangd03.github.io/soccer-fitness-tracker-site/privacy.html
-- **Support**: https://umangd03.github.io/soccer-fitness-tracker-site/support.html
+- **Home**: https://umang-desai.github.io/soccer-fitness-tracker-site/
+- **Privacy Policy**: https://umang-desai.github.io/soccer-fitness-tracker-site/privacy.html
+- **Support**: https://umang-desai.github.io/soccer-fitness-tracker-site/support.html
 
 ## Setup GitHub Pages
 
