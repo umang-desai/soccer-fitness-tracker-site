@@ -16,7 +16,7 @@ Public website for Soccer Fitness Tracker iOS app containing:
 1. Go to repository **Settings**
 2. Click **Pages** in the sidebar
 3. Under "Source", select **Deploy from a branch**
-4. Select **main** branch and **/ (root)** folder
+4. Select **develop** branch and **/ (root)** folder
 5. Click **Save**
 
 Your site will be live in a few minutes!
