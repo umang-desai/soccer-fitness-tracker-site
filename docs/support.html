@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="pitch"></div>
 
     <header class="topbar">
@@ -26,7 +27,17 @@
             <img src="assets/app-icon.png" alt="Soccer Fitness Tracker app icon" width="36" height="36" />
             <a href="index.html">Soccer Fitness Tracker</a>
           </div>
-          <nav class="nav" aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+            data-nav-toggle
+          >
+            Menu
+          </button>
+          <nav id="primary-nav" class="nav" aria-label="Primary navigation" data-open="false">
             <a href="index.html#features">Features</a>
             <a href="index.html#screenshots">Screenshots</a>
             <a href="privacy.html">Privacy</a>
@@ -42,7 +53,7 @@
       </div>
     </header>
 
-    <main class="page">
+    <main id="main-content" class="page">
       <div class="container">
         <div class="content">
           <h1>Support</h1>
@@ -51,52 +62,57 @@
           <h2>Frequently asked questions</h2>
 
           <div class="faq">
-            <div class="qa">
-              <h3>How do I start a workout?</h3>
+            <details class="qa">
+              <summary>How do I start a workout?</summary>
               <p>Open the app and tap Start. Choose your session type (Match, Training, or Drill) and mode (Outdoor or Indoor).</p>
-            </div>
+            </details>
 
-            <div class="qa">
-              <h3>Why is my GPS not working?</h3>
+            <details class="qa">
+              <summary>Why is my GPS not working?</summary>
               <p>Confirm Location Services is enabled and the app has permission (While Using App or Always). Outdoor routes need GPS.</p>
-            </div>
+            </details>
 
-            <div class="qa">
-              <h3>Why does distance differ from Apple Health/Fitness?</h3>
+            <details class="qa">
+              <summary>Why does distance differ from Apple Health/Fitness?</summary>
               <p>Differences come from GPS smoothing, pause detection, and which device recorded the route (iPhone vs Watch).</p>
-            </div>
+            </details>
 
-            <div class="qa">
-              <h3>How do I use the Apple Watch app?</h3>
+            <details class="qa">
+              <summary>How do I use the Apple Watch app?</summary>
               <p>Install the iPhone app, then install the Watch app from the iPhone Watch app. You can start workouts directly on your wrist.</p>
-            </div>
+            </details>
 
-            <div class="qa">
-              <h3>Why isn’t my heart rate showing?</h3>
+            <details class="qa">
+              <summary>Why isn’t my heart rate showing?</summary>
               <p>Make sure Health permissions include Heart Rate. For best results, wear Apple Watch snugly and keep it unlocked.</p>
-            </div>
+            </details>
 
-            <div class="qa">
-              <h3>How do I manage Apple Health permissions?</h3>
+            <details class="qa">
+              <summary>How do I manage Apple Health permissions?</summary>
               <p>Go to iOS Settings → Privacy &amp; Security → Health → Soccer Fitness Tracker to review or revoke access.</p>
-            </div>
+            </details>
 
-            <div class="qa">
-              <h3>How do I delete my data?</h3>
+            <details class="qa">
+              <summary>How do I delete my data?</summary>
               <p>In the app, go to Settings → Clear All Data. This removes local sessions and settings. It does not delete workouts already in Apple Health.</p>
-            </div>
+            </details>
 
-            <div class="qa">
-              <h3>Is my data private?</h3>
+            <details class="qa">
+              <summary>Is my data private?</summary>
               <p>Yes—no accounts, no ads, no tracking. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
-            </div>
+            </details>
           </div>
 
           <div style="height: 14px"></div>
           <div class="callout">
             <strong>Need help?</strong>
             <div style="height: 8px"></div>
-            <a class="pill primary" href="mailto:umangd03@gmail.com">Email Support</a>
+            <a
+              class="pill primary"
+              href="mailto:umangd03@gmail.com?subject=Soccer%20Fitness%20Tracker%20Support&amp;body=Device%20model%3A%0AiOS%2FwatchOS%20version%3A%0AApp%20version%3A%0AWhat%20happened%3A%0AWhat%20you%20expected%3A%0ASteps%20to%20reproduce%3A%0A"
+              >Email Support</a
+            >
+            <button class="pill" type="button" data-copy-template>Copy support template</button>
             <a class="pill" href="index.html">Back to Home</a>
           </div>
         </div>
@@ -114,5 +130,6 @@
         </div>
       </div>
     </footer>
+    <script src="assets/site.js" defer></script>
   </body>
 </html>

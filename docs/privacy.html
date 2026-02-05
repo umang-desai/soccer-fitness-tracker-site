@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="pitch"></div>
 
     <header class="topbar">
@@ -26,7 +27,17 @@
             <img src="assets/app-icon.png" alt="Soccer Fitness Tracker app icon" width="36" height="36" />
             <a href="index.html">Soccer Fitness Tracker</a>
           </div>
-          <nav class="nav" aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+            data-nav-toggle
+          >
+            Menu
+          </button>
+          <nav id="primary-nav" class="nav" aria-label="Primary navigation" data-open="false">
             <a href="index.html#features">Features</a>
             <a href="index.html#screenshots">Screenshots</a>
             <a href="support.html">Support</a>
@@ -42,7 +53,7 @@
       </div>
     </header>
 
-    <main class="page">
+    <main id="main-content" class="page">
       <div class="container">
         <div class="content">
           <h1>Privacy Policy</h1>
@@ -120,5 +131,6 @@
         </div>
       </div>
     </footer>
+    <script src="assets/site.js" defer></script>
   </body>
 </html>
